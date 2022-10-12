@@ -24,7 +24,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     );
     animation =
         CurvedAnimation(parent: controller, curve: Curves.easeInOutBack);
-    controller.forward();
+    controller.reverse(from: 1.0);
     controller.addListener(() {
       setState(() {});
       print(animation.value);
